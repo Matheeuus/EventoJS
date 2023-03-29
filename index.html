@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+  <div class="container center">
+      <div class="card">
+        <h2>OnClick</h2>
+        <hr/>
+        <p>
+          O evento onclick é usado para executar 
+    uma determinada função ou ação quando um elemento é clicado. Por exemplo, um botão pode ter um evento onclick que executa uma função que exibe uma mensagem 
+    de alerta
+        </p>
+        <button onclick="myFunction()">Clique aqui</button>
+        <script>
+            function myFunction() {
+            alert('Você clicou no botão!');
+            }
+        </script>
+      </div>
+
+
+      <div class="card">
+        <h2>ondblclick</h2>
+        <hr/>
+        <p>
+          O evento ondblclick é um evento do JavaScript que é acionado quando um elemento é clicado duas vezes com o mouse.
+        </p>
+        <button ondblclick="alert('Você clicou duas vezes!')">Clique aqui 2x</button>
+      </div>
+
+      <div class="card">
+        <h2>onChange</h2>
+        <hr/>
+        <p>
+          O evento onchange é um evento do JavaScript que é acionado quando o valor de um elemento HTML é alterado.
+        </p>
+        <input type="text" placeholder="Evento onChange" onChange="alert('Valor alterado!')" />
+      </div>
+    </div>
+<div class="container center">
+    <div class="card">
+      <h2>onChange</h2>
+      <hr/>
+      <p>
+        O evento input do JavaScript é um evento que é disparado quando o usuário insere ou altera o conteúdo de um elemento de entrada HTML
+      </p>
+      <input placeholder="Evento Input" type="text" id="myInput" />
+
+        <script>
+        document.getElementById("myInput").addEventListener("input", function(){
+            console.log("Valor do input foi alterado!");
+            alert(myInput.value)
+        });
+        </script>
+    </div>
+
+      <div class="card">
+            <h2>onChange</h2>
+            <hr/>
+            <p>
+              O evento onchange é um evento do JavaScript que é acionado quando o valor de um elemento HTML é alterado.
+            </p>
+                <div style="font-size: 20px; margin-top: 30px; color:blueviolet; " onMouseOver="alert('Você passou o mouse por cima do elemento!')">
+                  Passe o mouse por cima deste elemento para ver o alerta.
+                </div>
+          </div>
+  
+
+        <div class="card">
+          <h2>MouseOut</h2>
+          <hr/>
+          <p>
+            O evento onmouseout é um evento JavaScript que é acionado quando o usuário move o cursor do mouse fora de um elemento HTML.
+          </p>
+          <button onmouseout="alert('Você saiu do botão!')">MouseOut</button>
+        </div>
+
+  <div class="container center">
+        <div class="card">
+          <h2>keydown</h2>
+          <hr/>
+          <p>
+            O evento keydown do JavaScript é um evento que é disparado quando uma tecla é pressionada no teclado. (Aperte Enter) 
+          </p>
+          <h3>Aperte Enter</h3>
+         <script>
+            document.addEventListener("keydown", function(event) {
+              if (event.keyCode === 13) {
+                alert("Você pressionou a tecla Enter!");
+              }
+            });
+        </script>
+     </div>
+
+     <div class="card">
+          <h2>onKeyUp</h2>
+          <hr/>
+          <p>
+            O evento onkeyup é disparado quando o usuário solta uma tecla pressionada no teclado. 
+          </p>
+          <input type="text" onKeyUp="alert('Você digitou algo!');" />
+      </div>
+
+      <div class="card">
+        <h2>onFucos</h2>
+        <hr/>
+        <p>
+          O evento onfocus é disparado quando um elemento da página recebe o foco.
+        </p>
+        <input placeholder="onFocus" type="text" onfocus="alert('O campo recebeu o foco!')" />
+    </div>
+
+
+    <script>
+      window.onload = function() {
+      alert("Página carregada!  Evento OnLoad");
+      }
+      </script>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.12.0/umd/react.production.min.js'></script>
+</body>
+</html>
